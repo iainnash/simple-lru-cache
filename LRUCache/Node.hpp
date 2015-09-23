@@ -9,6 +9,17 @@
 #ifndef Node_hpp
 #define Node_hpp
 
-#include <stdio.h>
+#include <string>
+
+class Node {
+public:
+  Node(std::string key, Node *prev, Node *next) :
+    key(key), prev(prev), next(next) {
+    // None.
+  }
+  std::string key;
+  Node *prev;
+  Node *next;
+};
 
 #endif /* Node_hpp */
